@@ -1,0 +1,27 @@
+	@font-face {
+			font-family: "CabinRegular";
+			src: url("../fonts/CabinRegular/CabinRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "CirceBold";
+			src: url("../fonts/CirceBold/CirceBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "CirceExtraBold";
+			src: url("../fonts/CirceExtraBold/CirceExtraBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "CirceRegular";
+			src: url("../fonts/CirceRegular/CirceRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

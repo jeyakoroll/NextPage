@@ -5,7 +5,8 @@ $(document).ready(function() {
       feedbackTitle = $('.feedback__title'),
       feedbackBottom = $('.feedback__bottom'),
       feedbackButton = $('.feedback__button'),
-      footer = $('.footer');
+      footer = $('.footer'),
+      social = $('.social');
   
   // reviews
   headerSlider.owlCarousel({
@@ -51,6 +52,7 @@ $(document).ready(function() {
     feedbackBottom.addClass('hide');
     feedbackButton.addClass('hide');
     footer.addClass('hide');
+    social.addClass('hide');
   });
   
   //close popup
@@ -62,6 +64,7 @@ $(document).ready(function() {
       feedbackBottom.removeClass('hide');
       feedbackButton.removeClass('hide');
       footer.removeClass('hide');
+      social.removeClass('hide');
     }
   });
   //close popup when clicking the esc keyboard button
@@ -72,7 +75,27 @@ $(document).ready(function() {
       feedbackBottom.removeClass('hide');
       feedbackButton.removeClass('hide');
       footer.removeClass('hide');
+      social.removeClass('hide');
     }
   });
+
+  // show form
+  $('.social__top').on('click', goToTop);
+
+  // go top
+  function goToTop (e) {
+      e.preventDefault();
+      toTop($(this).data('main'), true);
+  }
+
+  function toTop(section, isAnimate) {
+      var 
+          reqSection = $('.main').filter('[data-section="' + section +'"]'),
+          reqSectionPos = reqSection.offset().top;
+
+      if (isAnimate) {
+        $('body, html').animate({scrollTop: reqSectionPos}, 350);
+      }
+  }
 
 })

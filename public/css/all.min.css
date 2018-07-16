@@ -145,11 +145,11 @@ img {
 }
 
 .social {
-  height: 350px;
+  height: 339px;
   width: 65px;
   -webkit-box-shadow: 0px 0px 80px 3px gainsboro;
   box-shadow: 0px 0px 80px 3px gainsboro;
-  position: absolute;
+  position: fixed;
   top: 240px;
   right: 35px;
   z-index: 2;
@@ -616,115 +616,6 @@ img {
   }
 }
 
-.mobile__dots-nav {
-  position: absolute;
-  z-index: 2;
-  width: 9px;
-  width: 510px;
-  left: -54px;
-  top: 71px;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile__dots-nav {
-    width: 400px;
-    left: -50px;
-    top: 53px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .mobile__dots-nav {
-    width: 280px;
-    left: -40px;
-    top: 30px;
-  }
-}
-
-.mobile__dots-next {
-  width: 27px;
-  height: 9px;
-  position: absolute;
-  right: 0;
-  background: url("../img/sprite.png") no-repeat -256px -179px;
-}
-
-.mobile__dots-prev {
-  width: 27px;
-  height: 9px;
-  position: absolute;
-  left: 0;
-  background: url("../img/sprite.png") no-repeat -218px -179px;
-}
-
-.mobile__dots-wrap {
-  position: relative;
-  z-index: 2;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mobile__dots-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  background: #fff;
-}
-
-.mobile__dots-item_num {
-  width: 80px;
-  height: 80px;
-  font-size: 16px;
-  font-family: 'CirceRegular';
-  color: #aaa;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: 1px solid #ebebea;
-  -webkit-box-shadow: 0px 0px 113px 5px #e3e3e3;
-  box-shadow: 0px 0px 113px 5px #e3e3e3;
-  -webkit-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile__dots-item_num {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .mobile__dots-item_num {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-}
-
-.mobile__dots-item_num:hover {
-  color: #f9c97b;
-}
-
 .header__slider {
   width: 1160px;
   height: 915px;
@@ -875,7 +766,7 @@ img {
 
 .header__slider-content {
   margin-top: 260px;
-  margin-left: 145px;
+  margin-left: 140px;
   max-width: 1015px;
   display: block;
 }
